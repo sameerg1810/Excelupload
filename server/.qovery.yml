@@ -1,0 +1,14 @@
+application:
+  name: my-node-app
+  project: user-portal
+  publicly_accessible: true
+databases:
+  - type: mysql  
+    version: "8"  
+    name: leads 
+routers:
+  - name: my-router
+    routes:
+      - application_name: my-node-app
+        paths:
+          - /
